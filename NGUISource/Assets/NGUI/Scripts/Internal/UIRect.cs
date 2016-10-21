@@ -325,7 +325,7 @@ public abstract class UIRect : MonoBehaviour
 				Transform t = cachedTransform;
 				Transform ct = mCam.transform;
                 //in:即平面正向（法线方向）
-                //Quaternion
+                //Quaternion:
 				Plane p = new Plane(t.rotation * Vector3.back, t.position);
 				Ray ray = new Ray(ct.position, ct.rotation * Vector3.forward);
 				float dist;
